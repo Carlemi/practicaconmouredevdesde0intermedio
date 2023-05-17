@@ -50,9 +50,42 @@ def sum_two_values(first_value, second_value):
 
 print(reduce(sum_two_values, numbers))
 
-dato = int(input('Ingrese un número'))
 
-lista = []
-lista.append(int(dato))
+
+'''lista = []
+
 acumulador = 0
+dato = int(input('Ingrese el número de veces que va a iterar: '))
+ask_data = 0
+var = 1
+while dato > acumulador:
+    if dato == 0:
+      print('Ingrese un número mayor que cero')
+    elif dato > 0:
+      ask_data = int(input('Ingrese un número: '))
+      lista.append(int(ask_data))
+    acumulador += 1
 
+def sum_values(ask_data):
+    print(ask_data)
+    return ask_data - ask_data
+
+#print(reduce(sum_two_values, lista))
+
+def multiply_values(lista):
+    global var
+    var = 1
+    for i in lista:
+        var = var * i
+    return var
+
+
+
+#print(multiply_values(lista))
+
+def division_values(lista): 
+    for divisor in range(len(lista)):
+        lista[divisor] /= divisor
+    return divisor
+
+print(division_values(lista))'''
