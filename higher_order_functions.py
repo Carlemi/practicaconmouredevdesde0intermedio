@@ -31,9 +31,9 @@ print(sum_ten(5)(1))
 numbers = [2, 5, 10, 21, 3, 30]
 # Map
 def multiply_two(number):
-    return number * 2 
+    return number / 2 
 print(list(map(multiply_two, numbers)))
-print(list(map(lambda number: number * 2, numbers)))
+print(list(map(lambda number: number / 2, numbers)))
 
 # Filter
 def filter_greater_that_ten(number):
@@ -52,11 +52,11 @@ print(reduce(sum_two_values, numbers))
 
 
 
-'''lista = []
+lista = []
 
 acumulador = 0
 dato = int(input('Ingrese el número de veces que va a iterar: '))
-ask_data = 0
+#ask_data = 0
 var = 1
 while dato > acumulador:
     if dato == 0:
@@ -68,11 +68,12 @@ while dato > acumulador:
 
 def sum_values(ask_data):
     print(ask_data)
-    return ask_data - ask_data
+    return ask_data + ask_data
 
 #print(reduce(sum_two_values, lista))
 
 def multiply_values(lista):
+
     global var
     var = 1
     for i in lista:
@@ -83,9 +84,18 @@ def multiply_values(lista):
 
 #print(multiply_values(lista))
 
-def division_values(lista): 
-    for divisor in range(len(lista)):
-        lista[divisor] /= divisor
+'''def division_values(one_value, two_value): 
+    for divisor in lista:
+        divisor =  ask_data / divisor
     return divisor
+    one_value = lista[0]
+    two_value = lista[1]
+    
+    return one_value / two_value'''
 
-print(division_values(lista))'''
+division = reduce(lambda x, y: x / y, lista)
+#print(division)
+#print(reduce(division_values, lista))
+
+substract = reduce(lambda x, y: x - y, lista)
+print(substract)
