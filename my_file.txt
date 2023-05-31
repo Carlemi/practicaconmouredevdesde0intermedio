@@ -1,0 +1,6 @@
+Mi nombre es Carlos
+Mi apellido es Mendoza
+30 años
+y mi lenguaje favorito es Python
+Aunque también me gusta Php
+Aunque también me gusta Php
